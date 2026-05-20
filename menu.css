@@ -1,0 +1,364 @@
+body {
+    background: #8cf0f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    background: #0f0f11;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid #222;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 5px;
+}
+
+.nav-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+    background: #252529;
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 65px;
+        left: -100%;
+        background: #0f0f11;
+        height: calc(100vh - 65px);
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.4s ease-in-out;
+    }
+
+    #click:checked ~ .nav-links {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 30px 0;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 12px 0;
+    }
+}
+
+body {
+    background: #8cf0f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-size: 70px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 66px;
+}
+
+.explicacion_python {
+    padding: 7px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(243, 249, 228);
+ border: #000 3px solid;
+ border-radius: 10px;
+ background: linear-gradient(to bottom, #ffe873 0%, #306998 40%, #1e415e 100%);
+}
+
+.pregunta_python {
+    font-size: 30px;
+}
+
+.python {
+text-align: center;
+font-size: 30px;
+}
+
+.explicacion_html {
+    padding: 7px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(243, 249, 228);
+ border: #000 3px solid;
+ border-radius: 10px;
+ background: linear-gradient(135deg, #ff4500, #ffaa00);
+}
+
+.pregunta_html {
+    font-size: 30px;
+}
+
+.html {
+text-align: center;
+font-size: 30px;
+}
+
+.explicacion_css {
+    padding: 7px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(243, 249, 228);
+ border: #000 3px solid;
+ border-radius: 10px;
+background: linear-gradient(135deg, #0076ff, #00d2ff);
+}
+
+.pregunta_css {
+    font-size: 30px;
+}
+
+.css {
+text-align: center;
+font-size: 30px;
+}
+
+.explicacion_flexbox {
+    padding: 7px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(243, 249, 228);
+ border: #000 3px solid;
+ border-radius: 10px;
+background: linear-gradient(135deg, #ff5f6d, #ffc371);
+}
+
+.pregunta_flexbox {
+    font-size: 30px;
+}
+
+.flexbox {
+text-align: center;
+font-size: 30px;
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 44px;
+}
+
+hr {
+    height: 6px;               /* Esto controla qué tan gordo se ve */
+    background-color: #04090f; /* El color de la línea */
+    border: none;              /* Quita el borde gris feo que trae por defecto */
+    border-radius: 5px;        /* Hace que las esquinas sean redondas y estéticas */
+    margin: 40px auto;         /* Separa las secciones hacia arriba y abajo */
+    width: 80%;                /* Opcional: para que no ocupe todo el ancho de la pantalla */
+}
+
+.explicacion_javascript {
+    padding: 7px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(243, 249, 228);
+ border: #000 3px solid;
+ border-radius: 10px;
+background: linear-gradient(135deg, #f7df1e, #ffb000);
+}
+
+.pregunta_javascript {
+    font-size: 30px;
+}
+
+.javascript {
+text-align: center;
+font-size: 30px;
+}
+
+.explicacion_typescript {
+    padding: 7px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(243, 249, 228);
+ border: #000 3px solid;
+ border-radius: 10px;
+background: linear-gradient(135deg, #3178c6, #0052cc);
+}
+
+.pregunta_typescript {
+    font-size: 30px;
+}
+
+.typescript {
+text-align: center;
+font-size: 30px;
+}
+
+.explicacion_php {
+    padding: 7px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(243, 249, 228);
+ border: #000 3px solid;
+ border-radius: 10px;
+background: linear-gradient(135deg, #777bb4, #4f5b93);
+}
+
+.pregunta_php {
+    font-size: 30px;
+}
+
+.php {
+text-align: center;
+font-size: 30px;
+}
+
+.explicacion_kotlin {
+    padding: 7px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(243, 249, 228);
+ border: #000 3px solid;
+ border-radius: 10px;
+background: linear-gradient(135deg, #7f52ff, #f88909);
+}
+
+.pregunta_kotlin {
+    font-size: 30px;
+}
+
+.kotlin {
+text-align: center;
+font-size: 30px;
+}
+
+.explicacion_swift {
+    padding: 7px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(243, 249, 228);
+ border: #000 3px solid;
+ border-radius: 10px;
+background: linear-gradient(135deg, #ff4500, #ff7300);
+}
+
+.pregunta_swift {
+    font-size: 30px;
+}
+
+.swift {
+text-align: center;
+font-size: 30px;
+}
+
+.explicacion_cpp {
+    padding: 7px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(243, 249, 228);
+ border: #000 3px solid;
+ border-radius: 10px;
+background: linear-gradient(135deg, #00599c, #00447c);
+}
+
+.pregunta_cpp {
+    font-size: 30px;
+}
+
+.cpp {
+text-align: center;
+font-size: 30px;
+}
+
+.explicacion_rust {
+    padding: 7px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(243, 249, 228);
+ border: #000 3px solid;
+ border-radius: 10px;
+background: linear-gradient(135deg, #ce412b, #e05b2b);
+}
+
+.pregunta_rust {
+    font-size: 30px;
+}
+
+.rust {
+text-align: center;
+font-size: 30px;
+}
+
+.explicacion_assembly {
+    padding: 7px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(243, 249, 228);
+ border: #000 3px solid;
+ border-radius: 10px;
+background: linear-gradient(135deg, #2c3e50, #00ff66);
+}
+
+.pregunta_assembly {
+    font-size: 30px;
+}
+
+.assembly {
+text-align: center;
+font-size: 30px;
+}

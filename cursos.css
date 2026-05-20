@@ -1,0 +1,197 @@
+/* --- CAMBIOS EN EL BODY --- */
+body {
+    background: #8cf0f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* SOLUCIÓN: Empuja todo el contenido hacia abajo para que no se esconda bajo la navbar */
+    padding-top: 90px; 
+}
+
+/* ... (Mantén todo tu código de la .navbar y @media exactamente igual) ... */
+
+/* --- CORRECCIÓN DEL H1 --- */
+h1 {
+    /* SOLUCIÓN: Eliminamos position: absolute y top */
+    text-align: center;
+    font-size: 66px; /* Un tamaño de 66px puede ser gigante en móviles, lo ajusté un poco */
+    color: #0f0f11;
+    margin-bottom: 20px;
+    padding: 0 15px; /* Evita que choque con los bordes en pantallas chicas */
+}
+
+/* --- TU HR AHORA SE VERÁ PERFECTAMENTE --- */
+hr {
+    height: 6px;               
+    background-color: #04090f; 
+    border: none;              
+    border-radius: 5px;        
+    margin: 30px auto;         
+    width: 80%;                
+}
+
+h2 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.video1 {
+    width: 400px;
+}
+
+.video2 {
+    width: 400px;
+}
+
+.video3 {
+    width: 400px;
+}
+
+.video4 {
+        margin-bottom: 12px;
+    width: 400px;
+}
+
+.video5 {
+        margin-bottom: 12px;
+    width: 400px;
+}
+
+.video6 {
+        margin-bottom: 12px;
+    width: 400px;
+}
+
+.video7 {
+        margin-bottom: 12px;
+    width: 400px;
+}
+
+.video8 {
+        margin-bottom: 12px;
+    width: 400px;
+}
+
+.video9 {
+        margin-bottom: 12px;
+    width: 400px;
+}
+
+.video10 {
+    margin-bottom: 12px;
+    width: 400px;
+}
+
+.video11 {
+    margin-bottom: 12px;
+    width: 400px;
+}
+
+.video12 {
+    margin-bottom: 12px;
+    width: 400px;
+}
+
+.video13 {
+    margin-bottom: 12px;
+    width: 400px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    background: #0f0f11;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid #222;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 5px;
+}
+
+.nav-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+    background: #252529;
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 65px;
+        left: -100%;
+        background: #0f0f11;
+        height: calc(100vh - 65px);
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.4s ease-in-out;
+    }
+
+    #click:checked ~ .nav-links {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 30px 0;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 12px 0;
+    }
+}
+
